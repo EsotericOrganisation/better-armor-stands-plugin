@@ -1,0 +1,4 @@
+name: ArmourStandArms
+version: '${version}'
+main: org.rolypolyvole.armourstandarms.ArmourStandArms
+api-version: '1.20'
