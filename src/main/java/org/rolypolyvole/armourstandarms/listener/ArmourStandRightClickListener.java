@@ -1,6 +1,5 @@
 package org.rolypolyvole.armourstandarms.listener;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.ArmorStand;
@@ -13,7 +12,6 @@ import org.bukkit.inventory.PlayerInventory;
 import org.jetbrains.annotations.NotNull;
 import org.rolypolyvole.armourstandarms.BetterArmourStandsPlugin;
 import org.rolypolyvole.armourstandarms.manager.PoseManager;
-import org.yaml.snakeyaml.Yaml;
 
 public class ArmourStandRightClickListener implements Listener {
 
@@ -40,8 +38,6 @@ public class ArmourStandRightClickListener implements Listener {
             PoseManager poseManager = plugin.getPoseManager();
 
             int poseIndex = poseManager.getPoseIndex(stand) % poseManager.getPoses().size();
-
-            Bukkit.getLogger().info("poseIndex = " + poseIndex);
 
             poseManager.setPose(stand, (poseIndex + 1) % poseManager.getPoses().size());
         } else if (itemMaterial.equals(Material.SMOOTH_STONE_SLAB) && !stand.hasBasePlate()) {

@@ -44,12 +44,8 @@ public class PoseManager {
         rotations.add(toRotationsArray(rightArmPose));
         rotations.add(toRotationsArray(rightLegPose));
 
-        Bukkit.getLogger().info("rotations = " + rotations);
-
         for (int i = 0; i < poses.size(); i++) {
             ArrayList<ArrayList<Double>> poseRotations = poses.get(i);
-
-            Bukkit.getLogger().info("poseRotations = " + poseRotations);
 
             if (poseRotations.equals(rotations)) {
                 return i;
