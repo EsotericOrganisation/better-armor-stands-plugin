@@ -40,10 +40,10 @@ public class ArmourStandRightClickListener implements Listener {
             Bukkit.getLogger().info("poseIndex = " + poseIndex);
 
             poseManager.setPose(stand, (poseIndex + 1) % poseManager.getPoses().size());
-        } else if (itemMaterial.equals(Material.SMOOTH_STONE_SLAB)) {
+        } else if (itemMaterial.equals(Material.SMOOTH_STONE_SLAB) && !stand.hasBasePlate()) {
             stand.setBasePlate(true);
-            inventory.setItemInMainHand(null);
 
+            mainHandItem.setAmount(mainHandItem.getAmount() - 1);
             return;
         }
 
