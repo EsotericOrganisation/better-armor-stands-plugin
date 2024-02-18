@@ -1,6 +1,5 @@
 package org.rolypolyvole.armourstandarms.listener;
 
-import org.bukkit.Effect;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.ArmorStand;
