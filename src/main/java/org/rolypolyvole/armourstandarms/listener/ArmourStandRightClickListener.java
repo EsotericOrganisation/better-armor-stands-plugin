@@ -44,7 +44,6 @@ public class ArmourStandRightClickListener implements Listener {
             stand.setBasePlate(true);
 
             mainHandItem.setAmount(mainHandItem.getAmount() - 1);
-            return;
         }
 
         event.setCancelled(true);
