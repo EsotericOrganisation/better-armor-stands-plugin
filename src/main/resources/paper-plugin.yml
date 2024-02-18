@@ -1,6 +1,6 @@
-name: "ArmourStandArms"
+name: "BetterArmourStandsPlugin"
 description: "Adds the Bedrock Edition pose customisation to armour stands as well as allowing base-plate manipulation."
 authors: ["Slqmy", "rolyPolyVole"]
 version: "${version}"
-main: "org.rolypolyvole.armourstandarms.ArmourStandArms"
+main: "org.rolypolyvole.armourstandarms.BetterArmourStandsPlugin"
 api-version: '1.20'
