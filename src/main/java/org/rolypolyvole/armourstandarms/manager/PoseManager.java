@@ -17,7 +17,7 @@ public class PoseManager {
     }
 
     public PoseManager(@NotNull BetterArmourStandsPlugin plugin) {
-        poses = (ArrayList<ArrayList<ArrayList<Double>>>) plugin.getConfig().getList("poses");
+        poses = (ArrayList<ArrayList<ArrayList<Double>>>) plugin.getConfig().getList("pose-changing.poses");
         assert poses != null;
 
         for (ArrayList<ArrayList<Double>> poseRotations : poses) {
