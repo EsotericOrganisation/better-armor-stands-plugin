@@ -2,6 +2,7 @@ package org.rolypolyvole.armourstandarms.listener;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -12,6 +13,7 @@ import org.bukkit.inventory.PlayerInventory;
 import org.jetbrains.annotations.NotNull;
 import org.rolypolyvole.armourstandarms.BetterArmourStandsPlugin;
 import org.rolypolyvole.armourstandarms.manager.PoseManager;
+import org.yaml.snakeyaml.Yaml;
 
 public class ArmourStandRightClickListener implements Listener {
 
@@ -32,7 +34,9 @@ public class ArmourStandRightClickListener implements Listener {
         ItemStack mainHandItem = inventory.getItemInMainHand();
         Material itemMaterial = mainHandItem.getType();
 
-        if (itemMaterial.equals(Material.AIR)) {
+        YamlConfiguration configuration = (YamlConfiguration) plugin.getConfig();
+
+        if (itemMaterial.equals(Material.AIR) && configuration.getBoolean("pose-changing.enabled")) {
             PoseManager poseManager = plugin.getPoseManager();
 
             int poseIndex = poseManager.getPoseIndex(stand) % poseManager.getPoses().size();

@@ -7,6 +7,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.rolypolyvole.armourstandarms.listener.ArmourStandBreakListener;
 import org.rolypolyvole.armourstandarms.listener.ArmourStandPlaceListener;
 import org.rolypolyvole.armourstandarms.listener.ArmourStandRightClickListener;
 import org.rolypolyvole.armourstandarms.manager.PoseManager;
@@ -27,7 +28,7 @@ public final class BetterArmourStandsPlugin extends JavaPlugin {
         getConfig().options().copyDefaults();
         saveDefaultConfig();
 
-        if (!getConfig().getBoolean("enabled")) {
+        if (!getConfig().getBoolean("plugin-enabled")) {
             onDisable();
             return;
         }
@@ -36,17 +37,21 @@ public final class BetterArmourStandsPlugin extends JavaPlugin {
 
         PluginManager pluginManager = Bukkit.getPluginManager();
 
-        pluginManager.registerEvents(new ArmourStandPlaceListener(), this);
+        pluginManager.registerEvents(new ArmourStandPlaceListener(this), this);
         pluginManager.registerEvents(new ArmourStandRightClickListener(this), this);
 
-        RecipeUtil.removeRecipe(Material.ARMOR_STAND);
+        if (getConfig().getBoolean("baseplate.baseplate-less-recipe")) {
+            pluginManager.registerEvents(new ArmourStandBreakListener(), this);
 
-        ItemStack armourStand = new ItemStack(Material.ARMOR_STAND, 1);
+            RecipeUtil.removeRecipe(Material.ARMOR_STAND);
 
-        ShapedRecipe baseplateLessRecipe = new ShapedRecipe(baseplateLessArmourStandRecipeKey, armourStand);
-        baseplateLessRecipe.shape("SSS", " S ", "S S");
-        baseplateLessRecipe.setIngredient('S', Material.STICK);
+            ItemStack armourStand = new ItemStack(Material.ARMOR_STAND, 1);
 
-        Bukkit.addRecipe(baseplateLessRecipe);
+            ShapedRecipe baseplateLessRecipe = new ShapedRecipe(baseplateLessArmourStandRecipeKey, armourStand);
+            baseplateLessRecipe.shape("SSS", " S ", "S S");
+            baseplateLessRecipe.setIngredient('S', Material.STICK);
+
+            Bukkit.addRecipe(baseplateLessRecipe);
+        }
     }
 }
