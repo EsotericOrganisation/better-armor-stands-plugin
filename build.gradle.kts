@@ -3,22 +3,26 @@ import xyz.jpenilla.resourcefactory.bukkit.BukkitPluginYaml
 plugins {
   `java-library`
   id("io.papermc.paperweight.userdev") version "1.7.1"
-  id("xyz.jpenilla.run-paper") version "2.3.0"
-  id("xyz.jpenilla.resource-factory-bukkit-convention") version "1.1.1"
+  id("xyz.jpenilla.run-paper") version "2.3.0" // Adds runServer and runMojangMappedServer tasks for testing
+  id("xyz.jpenilla.resource-factory-bukkit-convention") version "1.1.1" // Generates plugin.yml based on the Gradle config
 }
+
+val groupStringSeparator = "."
+val kebabcaseStringSeparator = "-"
+val snakecaseStringSeparator = "_"
 
 fun capitaliseFirstLetter(string: String): String {
   return string.first().uppercase() + string.slice(IntRange(1, string.length - 1))
 }
 
-fun snakecase(kebabCaseString: String): String {
-  return kebabCaseString.lowercase().replace('-', '_')
+fun snakecase(kebabcaseString: String): String {
+  return kebabcaseString.lowercase().replace(kebabcaseStringSeparator, snakecaseStringSeparator)
 }
 
-fun pascalcase(kebabCaseString: String): String {
+fun pascalcase(kebabcaseString: String): String {
   var pascalCaseString = ""
 
-  val splitString = kebabCaseString.split("-")
+  val splitString = kebabcaseString.split(kebabcaseStringSeparator)
 
   for (part in splitString) {
     pascalCaseString += capitaliseFirstLetter(part)
@@ -27,9 +31,11 @@ fun pascalcase(kebabCaseString: String): String {
   return pascalCaseString
 }
 
-val projectAuthor = "rolyPolyVole"
+val mainProjectAuthor = "rolyPolyVole"
+val topLevelDomain = "org"
+val projectAuthors = listOfNotNull(mainProjectAuthor, "Slqmy")
 
-group = "net." + projectAuthor.lowercase() + "." + snakecase(rootProject.name)
+group = topLevelDomain + groupStringSeparator + mainProjectAuthor.lowercase() + groupStringSeparator + snakecase(rootProject.name)
 version = "1.0.0-SNAPSHOT"
 description = "Adds the Bedrock Edition pose customisation to armour stands as well as allowing base-plate manipulation."
 
@@ -55,8 +61,8 @@ tasks {
 }
 
 bukkitPluginYaml {
-  main = project.group.toString() + "." + pascalcase(rootProject.name)
+  main = project.group.toString() + groupStringSeparator + pascalcase(rootProject.name)
   load = BukkitPluginYaml.PluginLoadOrder.STARTUP
-  authors.add(projectAuthor)
+  authors = projectAuthors
   apiVersion = paperApiVersion
 }
