@@ -1,4 +1,4 @@
-package org.rolypolyvole.armourstandarms.listener;
+package org.rolypolyvole.better_armour_stands_plugin.listener;
 
 import org.bukkit.Material;
 import org.bukkit.entity.ArmorStand;

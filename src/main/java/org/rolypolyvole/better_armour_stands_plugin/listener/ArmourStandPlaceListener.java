@@ -1,4 +1,4 @@
-package org.rolypolyvole.armourstandarms.listener;
+package org.rolypolyvole.better_armour_stands_plugin.listener;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.ArmorStand;
@@ -6,7 +6,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.jetbrains.annotations.NotNull;
-import org.rolypolyvole.armourstandarms.BetterArmourStandsPlugin;
+import org.rolypolyvole.better_armour_stands_plugin.BetterArmourStandsPlugin;
 
 public class ArmourStandPlaceListener implements Listener {
 

@@ -1,9 +1,9 @@
-package org.rolypolyvole.armourstandarms.manager;
+package org.rolypolyvole.better_armour_stands_plugin.manager;
 
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.util.EulerAngle;
 import org.jetbrains.annotations.NotNull;
-import org.rolypolyvole.armourstandarms.BetterArmourStandsPlugin;
+import org.rolypolyvole.better_armour_stands_plugin.BetterArmourStandsPlugin;
 
 import java.util.ArrayList;
 

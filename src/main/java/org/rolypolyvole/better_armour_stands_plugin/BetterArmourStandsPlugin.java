@@ -1,4 +1,4 @@
-package org.rolypolyvole.armourstandarms;
+package org.rolypolyvole.better_armour_stands_plugin;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -7,11 +7,11 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.rolypolyvole.armourstandarms.listener.ArmourStandBreakListener;
-import org.rolypolyvole.armourstandarms.listener.ArmourStandPlaceListener;
-import org.rolypolyvole.armourstandarms.listener.ArmourStandRightClickListener;
-import org.rolypolyvole.armourstandarms.manager.PoseManager;
-import org.rolypolyvole.armourstandarms.util.RecipeUtil;
+import org.rolypolyvole.better_armour_stands_plugin.listener.ArmourStandBreakListener;
+import org.rolypolyvole.better_armour_stands_plugin.listener.ArmourStandPlaceListener;
+import org.rolypolyvole.better_armour_stands_plugin.listener.ArmourStandRightClickListener;
+import org.rolypolyvole.better_armour_stands_plugin.manager.PoseManager;
+import org.rolypolyvole.better_armour_stands_plugin.util.RecipeUtil;
 
 public final class BetterArmourStandsPlugin extends JavaPlugin {
 

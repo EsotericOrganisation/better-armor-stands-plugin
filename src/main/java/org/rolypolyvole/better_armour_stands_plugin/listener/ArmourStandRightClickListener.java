@@ -1,4 +1,4 @@
-package org.rolypolyvole.armourstandarms.listener;
+package org.rolypolyvole.better_armour_stands_plugin.listener;
 
 import org.bukkit.Material;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -10,8 +10,8 @@ import org.bukkit.event.player.PlayerInteractAtEntityEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.jetbrains.annotations.NotNull;
-import org.rolypolyvole.armourstandarms.BetterArmourStandsPlugin;
-import org.rolypolyvole.armourstandarms.manager.PoseManager;
+import org.rolypolyvole.better_armour_stands_plugin.BetterArmourStandsPlugin;
+import org.rolypolyvole.better_armour_stands_plugin.manager.PoseManager;
 
 public class ArmourStandRightClickListener implements Listener {
 

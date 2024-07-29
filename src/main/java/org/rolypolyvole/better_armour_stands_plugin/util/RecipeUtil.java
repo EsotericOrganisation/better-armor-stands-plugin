@@ -1,4 +1,4 @@
-package org.rolypolyvole.armourstandarms.util;
+package org.rolypolyvole.better_armour_stands_plugin.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
