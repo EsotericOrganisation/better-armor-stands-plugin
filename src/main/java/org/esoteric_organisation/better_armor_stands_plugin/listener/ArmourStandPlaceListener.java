@@ -1,4 +1,4 @@
-package org.rolypolyvole.better_armour_stands_plugin.listener;
+package org.esoteric_organisation.better_armor_stands_plugin.listener;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.ArmorStand;
@@ -6,13 +6,13 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.jetbrains.annotations.NotNull;
-import org.rolypolyvole.better_armour_stands_plugin.BetterArmourStandsPlugin;
+import org.esoteric_organisation.better_armor_stands_plugin.BetterArmorStandsPlugin;
 
 public class ArmourStandPlaceListener implements Listener {
 
-    private final BetterArmourStandsPlugin plugin;
+    private final BetterArmorStandsPlugin plugin;
 
-    public ArmourStandPlaceListener(BetterArmourStandsPlugin plugin) {
+    public ArmourStandPlaceListener(BetterArmorStandsPlugin plugin) {
         this.plugin = plugin;
     }
 

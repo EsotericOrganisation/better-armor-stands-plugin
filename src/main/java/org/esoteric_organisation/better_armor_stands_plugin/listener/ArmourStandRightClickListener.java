@@ -1,4 +1,4 @@
-package org.rolypolyvole.better_armour_stands_plugin.listener;
+package org.esoteric_organisation.better_armor_stands_plugin.listener;
 
 import org.bukkit.Material;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -10,14 +10,14 @@ import org.bukkit.event.player.PlayerInteractAtEntityEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.jetbrains.annotations.NotNull;
-import org.rolypolyvole.better_armour_stands_plugin.BetterArmourStandsPlugin;
-import org.rolypolyvole.better_armour_stands_plugin.manager.PoseManager;
+import org.esoteric_organisation.better_armor_stands_plugin.BetterArmorStandsPlugin;
+import org.esoteric_organisation.better_armor_stands_plugin.manager.PoseManager;
 
 public class ArmourStandRightClickListener implements Listener {
 
-    private final BetterArmourStandsPlugin plugin;
+    private final BetterArmorStandsPlugin plugin;
 
-     public ArmourStandRightClickListener(BetterArmourStandsPlugin plugin) {
+     public ArmourStandRightClickListener(BetterArmorStandsPlugin plugin) {
          this.plugin = plugin;
      }
 

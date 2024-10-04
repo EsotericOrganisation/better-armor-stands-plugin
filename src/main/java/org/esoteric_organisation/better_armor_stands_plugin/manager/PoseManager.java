@@ -1,9 +1,9 @@
-package org.rolypolyvole.better_armour_stands_plugin.manager;
+package org.esoteric_organisation.better_armor_stands_plugin.manager;
 
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.util.EulerAngle;
 import org.jetbrains.annotations.NotNull;
-import org.rolypolyvole.better_armour_stands_plugin.BetterArmourStandsPlugin;
+import org.esoteric_organisation.better_armor_stands_plugin.BetterArmorStandsPlugin;
 
 import java.util.ArrayList;
 
@@ -15,7 +15,7 @@ public class PoseManager {
         return poses;
     }
 
-    public PoseManager(@NotNull BetterArmourStandsPlugin plugin) {
+    public PoseManager(@NotNull BetterArmorStandsPlugin plugin) {
         poses = (ArrayList<ArrayList<ArrayList<Double>>>) plugin.getConfig().getList("pose-changing.poses");
         assert poses != null;
 

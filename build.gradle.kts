@@ -31,9 +31,9 @@ fun pascalcase(kebabcaseString: String): String {
   return pascalCaseString
 }
 
-val mainProjectAuthor = "rolyPolyVole"
+val mainProjectAuthor = "Esoteric Organisation"
 val topLevelDomain = "org"
-val projectAuthors = listOfNotNull(mainProjectAuthor, "Slqmy")
+val projectAuthors = listOfNotNull(mainProjectAuthor, "rolyPolyVole", "Esoteric Enderman")
 
 group = topLevelDomain + groupStringSeparator + mainProjectAuthor.lowercase() + groupStringSeparator + snakecase(rootProject.name)
 version = "1.0.0-SNAPSHOT"

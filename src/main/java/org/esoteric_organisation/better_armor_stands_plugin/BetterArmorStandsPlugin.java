@@ -1,4 +1,4 @@
-package org.rolypolyvole.better_armour_stands_plugin;
+package org.esoteric_organisation.better_armor_stands_plugin;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -7,13 +7,13 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.rolypolyvole.better_armour_stands_plugin.listener.ArmourStandBreakListener;
-import org.rolypolyvole.better_armour_stands_plugin.listener.ArmourStandPlaceListener;
-import org.rolypolyvole.better_armour_stands_plugin.listener.ArmourStandRightClickListener;
-import org.rolypolyvole.better_armour_stands_plugin.manager.PoseManager;
-import org.rolypolyvole.better_armour_stands_plugin.util.RecipeUtil;
+import org.esoteric_organisation.better_armor_stands_plugin.listener.ArmourStandBreakListener;
+import org.esoteric_organisation.better_armor_stands_plugin.listener.ArmourStandPlaceListener;
+import org.esoteric_organisation.better_armor_stands_plugin.listener.ArmourStandRightClickListener;
+import org.esoteric_organisation.better_armor_stands_plugin.manager.PoseManager;
+import org.esoteric_organisation.better_armor_stands_plugin.util.RecipeUtil;
 
-public final class BetterArmourStandsPlugin extends JavaPlugin {
+public final class BetterArmorStandsPlugin extends JavaPlugin {
 
     private PoseManager poseManager;
 
