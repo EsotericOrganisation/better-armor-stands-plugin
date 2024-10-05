@@ -16,6 +16,8 @@ pose-changing:
   enabled: true
 
   # The list of armor stand poses that will be cycled through
+  # The syntax for the poses is:
+  # [ [ body pose ], [ head pose ], [ left arm pose ], [ left leg pose ], [ right arm pose ], [ right leg pose ] ]
   poses: [
     [ [ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ],[ -10.0,0.0,-10.0 ],[ -1.0,0.0,-1.0 ],[ -15.0,0.0,10.0 ],[ 1.0,0.0,1.0 ] ],
     [ [ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ] ],
