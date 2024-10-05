@@ -13,16 +13,16 @@ import org.jetbrains.annotations.NotNull;
 import org.esoteric_organisation.better_armor_stands_plugin.BetterArmorStandsPlugin;
 import org.esoteric_organisation.better_armor_stands_plugin.manager.PoseManager;
 
-public class ArmourStandRightClickListener implements Listener {
+public class ArmorStandRightClickListener implements Listener {
 
     private final BetterArmorStandsPlugin plugin;
 
-     public ArmourStandRightClickListener(BetterArmorStandsPlugin plugin) {
+     public ArmorStandRightClickListener(BetterArmorStandsPlugin plugin) {
          this.plugin = plugin;
      }
 
     @EventHandler
-    public void onArmourStandClick(@NotNull PlayerInteractAtEntityEvent event) {
+    public void onArmorStandClick(@NotNull PlayerInteractAtEntityEvent event) {
         Player player = event.getPlayer();
 
         if (!(event.getRightClicked() instanceof ArmorStand stand)) return;

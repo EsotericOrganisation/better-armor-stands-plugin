@@ -8,10 +8,10 @@ import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-public class ArmourStandBreakListener implements Listener {
+public class ArmorStandBreakListener implements Listener {
 
     @EventHandler
-    public void onArmourStandBreak(@NotNull EntityDeathEvent event) {
+    public void onArmorStandBreak(@NotNull EntityDeathEvent event) {
         if (event.getEntity() instanceof ArmorStand stand && stand.hasBasePlate()) {
             ItemStack smoothStoneSlab = new ItemStack(Material.SMOOTH_STONE_SLAB, 1);
 

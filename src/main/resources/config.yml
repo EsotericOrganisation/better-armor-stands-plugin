@@ -1,21 +1,21 @@
 # Whether the plugin is enabled or not
 plugin-enabled: true
 
-# Whether newly spawned armour stands should have arms by default
+# Whether newly spawned armor stands should have arms by default
 arms: true
 
 baseplate: # (smooth stone slabs)
-  # Whether baseplates can be put on armour stands
+  # Whether baseplates can be put on armor stands
   changeable: true
 
-  # Whether an armour stand crafting recipe should be added that does not require the baseplate
+  # Whether an armor stand crafting recipe should be added that does not require the baseplate
   baseplate-less-recipe: true
 
 pose-changing:
-  # Whether players will be able to change poses of armour stands
+  # Whether players will be able to change poses of armor stands
   enabled: true
 
-  # The list of armour stand poses that will be cycled through
+  # The list of armor stand poses that will be cycled through
   poses: [
     [ [ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ],[ -10.0,0.0,-10.0 ],[ -1.0,0.0,-1.0 ],[ -15.0,0.0,10.0 ],[ 1.0,0.0,1.0 ] ],
     [ [ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ],[ 0.0,0.0,0.0 ] ],

@@ -8,16 +8,16 @@ import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.jetbrains.annotations.NotNull;
 import org.esoteric_organisation.better_armor_stands_plugin.BetterArmorStandsPlugin;
 
-public class ArmourStandPlaceListener implements Listener {
+public class ArmorStandPlaceListener implements Listener {
 
     private final BetterArmorStandsPlugin plugin;
 
-    public ArmourStandPlaceListener(BetterArmorStandsPlugin plugin) {
+    public ArmorStandPlaceListener(BetterArmorStandsPlugin plugin) {
         this.plugin = plugin;
     }
 
     @EventHandler
-    public void onArmourStandSpawn(@NotNull CreatureSpawnEvent event) {
+    public void onArmorStandSpawn(@NotNull CreatureSpawnEvent event) {
         if (event.getEntity() instanceof ArmorStand stand) {
             YamlConfiguration configuration = (YamlConfiguration) plugin.getConfig();
 
