@@ -37,7 +37,7 @@ val projectAuthors = listOfNotNull(mainProjectAuthor, "rolyPolyVole", "Esoteric 
 
 group = topLevelDomain + groupStringSeparator + snakecase(mainProjectAuthor.lowercase()) + groupStringSeparator + snakecase(rootProject.name)
 version = "1.0.0-SNAPSHOT"
-description = "Adds the Bedrock Edition pose customisation to armor stands as well as allowing base-plate manipulation."
+description = "A Minecraft plugin that adds the Bedrock Edition pose customisation to armor stands as well as allowing base-plate manipulation."
 
 val javaVersion = 21
 val paperApiVersion = "1.21"
