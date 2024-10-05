@@ -5,7 +5,7 @@ plugin-enabled: true
 arms: true
 
 baseplate: # (smooth stone slabs)
-  # Whether baseplates can be put on armor stands
+  # Whether baseplates can be put on armor stands and taken off
   changeable: true
 
   # Whether an armor stand crafting recipe should be added that does not require the baseplate
