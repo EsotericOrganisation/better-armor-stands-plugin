@@ -62,6 +62,7 @@ tasks {
 
 bukkitPluginYaml {
   main = project.group.toString() + groupStringSeparator + pascalcase(rootProject.name)
+  description = project.description
   load = BukkitPluginYaml.PluginLoadOrder.STARTUP
   authors = projectAuthors
   apiVersion = paperApiVersion
