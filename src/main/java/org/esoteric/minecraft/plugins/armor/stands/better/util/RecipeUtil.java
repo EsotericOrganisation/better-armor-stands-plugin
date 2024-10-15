@@ -1,4 +1,4 @@
-package org.esoteric_organisation.better_armor_stands_plugin.util;
+package org.esoteric.minecraft.plugins.armor.stands.better.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

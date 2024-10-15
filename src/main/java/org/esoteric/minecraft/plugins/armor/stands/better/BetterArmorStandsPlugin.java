@@ -1,4 +1,4 @@
-package org.esoteric_organisation.better_armor_stands_plugin;
+package org.esoteric.minecraft.plugins.armor.stands.better;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -7,11 +7,11 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.esoteric_organisation.better_armor_stands_plugin.listener.ArmorStandBreakListener;
-import org.esoteric_organisation.better_armor_stands_plugin.listener.ArmorStandPlaceListener;
-import org.esoteric_organisation.better_armor_stands_plugin.listener.ArmorStandRightClickListener;
-import org.esoteric_organisation.better_armor_stands_plugin.manager.PoseManager;
-import org.esoteric_organisation.better_armor_stands_plugin.util.RecipeUtil;
+import org.esoteric.minecraft.plugins.armor.stands.better.listener.ArmorStandBreakListener;
+import org.esoteric.minecraft.plugins.armor.stands.better.listener.ArmorStandPlaceListener;
+import org.esoteric.minecraft.plugins.armor.stands.better.listener.ArmorStandRightClickListener;
+import org.esoteric.minecraft.plugins.armor.stands.better.manager.PoseManager;
+import org.esoteric.minecraft.plugins.armor.stands.better.util.RecipeUtil;
 
 public final class BetterArmorStandsPlugin extends JavaPlugin {
 

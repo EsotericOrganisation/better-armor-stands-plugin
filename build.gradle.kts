@@ -35,7 +35,7 @@ val mainProjectAuthor = "Esoteric Organisation"
 val topLevelDomain = "org"
 val projectAuthors = listOfNotNull(mainProjectAuthor, "rolyPolyVole", "Esoteric Enderman")
 
-group = topLevelDomain + groupStringSeparator + snakecase(mainProjectAuthor.lowercase()) + groupStringSeparator + snakecase(rootProject.name)
+group = topLevelDomain + groupStringSeparator + "esoteric"
 version = "1.0.0-SNAPSHOT"
 description = "A Minecraft plugin that adds the Bedrock Edition pose customisation to armor stands as well as allowing base-plate manipulation."
 
@@ -61,9 +61,12 @@ tasks {
 }
 
 bukkitPluginYaml {
-  main = project.group.toString() + groupStringSeparator + pascalcase(rootProject.name)
+  name = "BetterArmorStands"
   description = project.description
-  load = BukkitPluginYaml.PluginLoadOrder.STARTUP
   authors = projectAuthors
+
+  version = project.version.toString()
   apiVersion = paperApiVersion
+  main = project.group.toString() + groupStringSeparator + "minecraft.plugins.armor.stands.better" + groupStringSeparator + pascalcase(rootProject.name)
+  load = BukkitPluginYaml.PluginLoadOrder.STARTUP
 }
