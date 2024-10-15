@@ -1,4 +1,4 @@
-package org.esoteric.minecraft.plugins.armor.stands.better.manager;
+package org.esoteric.minecraft.plugins.armor.stands.better.managers;
 
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.util.EulerAngle;

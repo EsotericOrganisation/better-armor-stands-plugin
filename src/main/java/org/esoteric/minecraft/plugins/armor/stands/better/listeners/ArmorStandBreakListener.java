@@ -1,4 +1,4 @@
-package org.esoteric.minecraft.plugins.armor.stands.better.listener;
+package org.esoteric.minecraft.plugins.armor.stands.better.listeners;
 
 import org.bukkit.Material;
 import org.bukkit.entity.ArmorStand;
